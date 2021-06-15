@@ -10,7 +10,7 @@ from helper_func import encode, get_message_id
 async def batch(client: Client, message: Message):
     while True:
         try:
-            first_message = await client.ask(text = "Forward the First Message from DB Channel (with Quotes)..\n\nor Send the DB Channel Post Link", chat_id = message.from_user.id, filters=(filters.forwarded | (filters.text & ~filters.forwarded)), timeout=30)
+            first_message = await client.ask(text = "Teruskan Pesan Pertama Kali Ke DataBase Channel(dengan keterangan)..\n\nor Send the DB Channel Post Link", chat_id = message.from_user.id, filters=(filters.forwarded | (filters.text & ~filters.forwarded)), timeout=30)
         except:
             return
         f_msg_id = await get_message_id(client, first_message)
