@@ -7,11 +7,11 @@
     "file",
     "sharing"
   ],
-  "repository": "https://github.com/CodeXBotz/File-Sharing-Bot",
-  "logo": "https://telegra.ph/file/14d3013fda21281c54b61.jpg",
+  "repository": "https://github.com/AngkasaBoy/FileLink",
+  "logo": "https://telegra.ph/file/42339eceb3b501267cc63.jpg",
   "env": {
     "TG_BOT_TOKEN": {
-      "description": "Your Bot token, Get it from @Botfather",
+      "description": "Bot Token Lu, Dapatkan dari @Botfather",
       "value": ""
     },
     "OWNER_ID": {
@@ -28,11 +28,11 @@
     },
     "CHANNEL_ID":{
       "description": "make a channel (database channel), then make the bot as admin in channel, and it's id",
-      "value": "-100"
+      "value": "-1001291756332"
     },
     "FORCE_SUB_CHANNEL":{
       "description": "id of the channel or group, if you want enable force sub feature else put 0",
-      "value": "0"
+      "value": "-1001388523025"
     },
     "START_MESSAGE": {
       "description": "Optional: start message of bot, use HTML parsemode format",
