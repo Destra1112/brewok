@@ -40,11 +40,11 @@ async def start_command(client: Client, message: Message):
                 ids = [int(int(argument[1]) / abs(client.db_channel.id))]
             except:
                 return
-        temp_msg = await message.reply("Please wait...")
+        temp_msg = await message.reply("Sabar Bentar Gaesss...")
         try:
             messages = await get_messages(client, ids)
         except:
-            await message.reply_text("Something went wrong..!")
+            await message.reply_text("Sepertinya Ada Yang Salah..!")
             return
         await temp_msg.delete()
 
@@ -73,8 +73,8 @@ async def start_command(client: Client, message: Message):
         reply_markup = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("😊 About Me", callback_data = "about"),
-                    InlineKeyboardButton("🔒 Close", callback_data = "close")
+                    InlineKeyboardButton("🤖 Tentang Bot", callback_data = "about"),
+                    InlineKeyboardButton("❌ Keluar", callback_data = "close")
                 ]
             ]
         )
@@ -94,7 +94,7 @@ async def start_command(client: Client, message: Message):
 
 @Bot.on_message(filters.command('start') & filters.private)
 async def not_joined(client: Client, message: Message):
-    text = "<b>You need to join in my Channel/Group to use me\n\nKindly Please join Channel</b>"
+    text = "<b>Wajib Join Grup Dulu Jika Ingin Menggunakan\n\nCepat Lakukan Sekarang!</b>"
     message_text = message.text
     try:
         command, argument = message_text.split()
