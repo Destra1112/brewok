@@ -16,7 +16,7 @@
     },
     "OWNER_ID": {
       "description": "An integer of consisting of your owner ID",
-      "value": "1250450587"
+      "value": "Isi ID Lu Disini"
     },
     "APP_ID":{
       "description": "your app id, take it from my.telegram.org",
@@ -27,19 +27,19 @@
       "value": ""
     },
     "CHANNEL_ID":{
-      "description": "make a channel (database channel), then make the bot as admin in channel, and it's id",
-      "value": "-1001291756332"
+      "description": "Buat Sebuah Channel Baru (database channel) Jangan Channel Utama, Masukin Bot Lu Ke Channel Dan Kasih Akses Admin",
+      "value": "Isi ID Channel Baru"
     },
     "FORCE_SUB_CHANNEL":{
-      "description": "id of the channel or group, if you want enable force sub feature else put 0",
-      "value": "-1001388523025"
+      "description": "Isi Dengan ID Grup/Channel Utama Agar Pengguna Bot Wajib Join",
+      "value": "0"
     },
     "START_MESSAGE": {
-      "description": "Optional: start message of bot, use HTML parsemode format",
-      "value": "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link."
+      "description": "Optional: Pesan Memulai Bot, Dapat Di Atur Sesuka Lu",
+      "value": "Hello {first}\n\nGua Adalah Bot Yang Dapat Menjadikan Media Menjadi Link"
     },
     "ADMINS": {
-      "description": "A space separated list of user_ids of Admins, they can only create links",
+      "description": "Isi ID Pengguna Yang Dapat Menggunakan Fitur CMD Khusus Admin",
       "value": "",
       "required": false
     }
